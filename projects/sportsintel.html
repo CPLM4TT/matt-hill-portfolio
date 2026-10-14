@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SportsIntel | Matt Hill</title>
+
+  <meta name="description"
+        content="SportsIntel, a completed NBA player statistics desktop application.">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.ico">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <button id="menu-button" class="menu-button" type="button"
+            aria-controls="nav-links" aria-expanded="false">
+      Menu
+    </button>
+
+    <div id="nav-links" class="nav-links">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="project-page">
+
+  <section>
+    <h1>SportsIntel</h1>
+
+    <p>
+      An NBA player statistics desktop application for exploring
+      game logs, analyzing performance, and comparing players.
+    </p>
+
+    <p><strong>Status:</strong> Completed</p>
+
+    <p>
+      <strong>Project Type:</strong>
+      Team Software Development Project
+    </p>
+
+    <p><strong>My Role:</strong> Backend / API</p>
+
+    <a href="../index.html#projects">← Back to Selected Work</a>
+  </section>
+
+  <section>
+    <h2>Project Overview</h2>
+
+    <p>
+      SportsIntel brings NBA player statistics and comparisons
+      into one desktop application. Users can search for a player
+      and narrow results by season, opponent, game location,
+      and recent games.
+    </p>
+
+    <p>
+      We completed the application as a team software development
+      project. It combines a JavaFX interface with a Python
+      backend that retrieves and processes NBA statistics.
+    </p>
+
+    <p>
+      The application helps basketball fans review recent
+      performance, investigate results against a particular
+      opponent, and compare two players across matching
+      statistical categories.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Contribution</h2>
+
+    <p>
+      I worked on the backend and API portion of SportsIntel.
+      My work focused on connecting the desktop application
+      with NBA statistics and processing data for searches
+      and comparisons.
+    </p>
+
+    <p>
+      The team used Scrum, with a project backlog and sprint
+      tasks tracked through GitHub Issues. Regular stand-ups
+      covered progress, upcoming work, and blockers.
+    </p>
+  </section>
+
+  <section>
+    <h2>Main Features</h2>
+
+    <ul>
+      <li>Search for NBA players and retrieve their game logs.</li>
+
+      <li>
+        Filter by season range, regular season or playoffs,
+        opponent, home or away games, and last number of games.
+      </li>
+
+      <li>
+        Explore averages, high and low games, and recent
+        performance summaries.
+      </li>
+
+      <li>
+        Review points, assists, rebounds, shooting percentages,
+        steals, blocks, turnovers, minutes, and plus/minus.
+      </li>
+
+      <li>Compare two players side by side.</li>
+
+      <li>
+        Register, sign in, and access saved search
+        and comparison history.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technologies</h2>
+
+    <ul>
+      <li>
+        <strong>Java and JavaFX:</strong>
+        Desktop interface and application controls.
+      </li>
+
+      <li>
+        <strong>FXML and CSS:</strong>
+        Screen layouts and visual styling.
+      </li>
+
+      <li>
+        <strong>Python and Django REST Framework:</strong>
+        Backend search, game log, and comparison endpoints.
+      </li>
+
+      <li>
+        <strong>nba_api and pandas:</strong>
+        NBA statistics retrieval and data processing.
+      </li>
+
+      <li>
+        <strong>Firebase Authentication and Firestore:</strong>
+        User accounts and stored history.
+      </li>
+
+      <li>
+        <strong>Maven and GitHub:</strong>
+        Dependency management, version control, and task tracking.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+
+    <ol>
+      <li>
+        The user enters a player name and selects filters
+        in the JavaFX interface.
+      </li>
+
+      <li>
+        The desktop application sends an HTTP request
+        to the Django backend.
+      </li>
+
+      <li>
+        The backend retrieves NBA data, applies filters,
+        and calculates summaries.
+      </li>
+
+      <li>The backend returns the results as JSON.</li>
+
+      <li>
+        The desktop application displays the statistics
+        and comparisons.
+      </li>
+    </ol>
+
+    <p>
+      The backend handles data retrieval and processing,
+      while the desktop application handles user input
+      and the presentation of results.
+    </p>
+  </section>
+
+  <section>
+    <h2>Interface Preview</h2>
+
+    <h3>Player Search</h3>
+
+    <img class="project-screenshot"
+         src="../img/sportsintel-search.png"
+         alt="SportsIntel player search interface preview">
+
+    <p>
+      Search for a player and filter statistics by season,
+      opponent, game location, and recent games.
+    </p>
+
+    <h3>Player Comparison</h3>
+
+    <img class="project-screenshot"
+         src="../img/sportsintel-comparison.png"
+         alt="SportsIntel player comparison interface preview">
+
+    <p>
+      Compare two players across points, assists, rebounds,
+      shooting percentage, and minutes. Statistics shown
+      are illustrative.
+    </p>
+  </section>
+
+  <section>
+    <h2>Project Outcome</h2>
+
+    <p>
+      The completed project combines player searches, statistical
+      summaries, account access, and comparisons in one desktop
+      application. It gave me experience developing API endpoints,
+      processing external data, and coordinating backend work
+      with a team.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Matt Hill</p>
+  <a href="../index.html#projects">Back to projects</a>
+</footer>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

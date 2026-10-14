@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Drum Bus | Matt Hill</title>
+
+  <meta name="description"
+        content="Drum Bus, a completed PHP and MySQL client management website.">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.ico">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <button id="menu-button" class="menu-button" type="button"
+            aria-controls="nav-links" aria-expanded="false">
+      Menu
+    </button>
+
+    <div id="nav-links" class="nav-links">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="project-page">
+
+  <section>
+    <h1>Drum Bus Client Management System</h1>
+
+    <p>
+      A database-driven website for managing client information
+      for a mobile drum-lesson business.
+    </p>
+
+    <p><strong>Status:</strong> Completed</p>
+
+    <p>
+      <strong>Project Type:</strong>
+      Web Database Development Project
+    </p>
+
+    <p>
+      <strong>My Role:</strong>
+      Application and Database Development
+    </p>
+
+    <a href="../index.html#projects">← Back to Selected Work</a>
+  </section>
+
+  <section>
+    <h2>Project Overview</h2>
+
+    <p>
+      I completed Drum Bus for my Web Database Development
+      coursework. The application was modeled after a friend's
+      mobile drum-lesson business and organizes client contact
+      information and notes in a searchable database.
+    </p>
+
+    <p>
+      Users can register an account, sign in, and manage client
+      records through a consistent interface. The main menu
+      connects the listing, adding, searching, updating,
+      and deleting workflows.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Contribution</h2>
+
+    <p>
+      I developed the website and its database as an individual
+      course project. My work included authentication,
+      database connections, client record management,
+      input validation, and page navigation.
+    </p>
+
+    <p>
+      I used PHP and PDO to connect the interface with MySQL
+      and handle the database operations required by
+      each client management page.
+    </p>
+  </section>
+
+  <section>
+    <h2>Main Features</h2>
+
+    <ul>
+      <li>List client records in an HTML table.</li>
+      <li>Add clients with name, email, phone, city, and notes.</li>
+      <li>Search using a selected field and a search term.</li>
+      <li>Update existing client information.</li>
+      <li>Confirm and delete client records.</li>
+      <li>Register an account, sign in, and log out.</li>
+      <li>Restrict client management pages to authenticated sessions.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technologies</h2>
+
+    <ul>
+      <li>
+        <strong>PHP:</strong>
+        Server-side forms, authentication, and record management.
+      </li>
+
+      <li>
+        <strong>MySQL:</strong>
+        Storage for client records and user accounts.
+      </li>
+
+      <li>
+        <strong>PDO:</strong>
+        Database connections and prepared SQL statements.
+      </li>
+
+      <li>
+        <strong>HTML and CSS:</strong>
+        Page structure, forms, tables, and styling.
+      </li>
+
+      <li>
+        <strong>JavaScript:</strong>
+        Client-side form validation.
+      </li>
+
+      <li>
+        <strong>XAMPP and Apache:</strong>
+        Local development environment.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Database Design</h2>
+
+    <p>
+      The database uses separate tables for client information
+      and user accounts.
+    </p>
+
+    <ul>
+      <li>
+        <strong>clients:</strong>
+        Stores an ID, full name, email, phone, city,
+        notes, and creation timestamp.
+      </li>
+
+      <li>
+        <strong>users:</strong>
+        Stores the username, email, and hashed password
+        used for registration and login.
+      </li>
+    </ul>
+
+    <p>
+      Client IDs identify records for updates and deletion.
+      A unique index on client email helps prevent duplicate
+      email entries, while an index on city supports
+      searches and filtering.
+    </p>
+  </section>
+
+  <section>
+    <h2>Authentication and Validation</h2>
+
+    <p>
+      Passwords are hashed before storage and verified during
+      login. Sessions control access to the main menu and
+      client management pages.
+    </p>
+
+    <p>
+      PDO prepared statements are used for database operations.
+      The application includes PHP validation, JavaScript
+      validation, and output sanitization when displaying
+      user-provided information.
+    </p>
+  </section>
+
+  <section>
+    <h2>Interface Preview</h2>
+
+    <h3>Client List</h3>
+
+    <img class="project-screenshot"
+         src="../img/drum-bus-clients-mockup.png"
+         alt="Drum Bus client list preview with sample records and edit and delete actions">
+
+    <p>
+      The client list presents contact information and notes
+      in a table, with actions for editing or deleting a record.
+      The preview uses sample data.
+    </p>
+
+    <h3>Add Client</h3>
+
+    <img class="project-screenshot"
+         src="../img/drum-bus-add-client-mockup.png"
+         alt="Drum Bus add-client preview with contact information and notes fields">
+
+    <p>
+      The add-client form collects the information stored
+      in the client database, including contact details,
+      city, and lesson notes.
+    </p>
+  </section>
+
+  <section>
+    <h2>Project Outcome</h2>
+
+    <p>
+      The completed application supports account access and
+      the full client record management workflow. Users can
+      create, view, search, update, and delete records through
+      the website.
+    </p>
+
+    <p>
+      The project gave me experience building a PHP and MySQL
+      application around a practical business need, with
+      authentication, validation, and consistent navigation.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Matt Hill</p>
+  <a href="../index.html#projects">Back to projects</a>
+</footer>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
