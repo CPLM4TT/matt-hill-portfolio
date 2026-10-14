@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Helps the page display text correctly and fit smaller screens -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,6 +11,7 @@
   <meta name="description"
         content="Matt Hill's portfolio featuring software development projects, skills, education, and experience.">
 
+  <!-- Loads the shared styles and the little browser-tab icon -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -18,11 +20,13 @@
 
 <header>
   <nav aria-label="Main navigation">
+    <!-- JavaScript uses this button to open and close the mobile menu -->
     <button id="menu-button" class="menu-button" type="button"
             aria-controls="nav-links" aria-expanded="false">
       Menu
     </button>
 
+    <!-- These links jump to the matching sections on this page -->
     <div id="nav-links" class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -35,6 +39,7 @@
 
 <main>
 
+  <!-- A quick introduction and shortcuts to my work and resume -->
   <section id="home">
     <div class="home">
 
@@ -55,9 +60,11 @@
     </div>
   </section>
 
+  <!-- flow-root keeps the floated photo contained inside this section -->
   <section id="about" style="display: flow-root;">
     <h2>About Me</h2>
 
+    <!-- Keeps my photo on the right while the text wraps beside it -->
     <img src="img/IMG_2452.jpg"
          alt="Matt Hill"
          width="200"
@@ -84,6 +91,7 @@
       business operations.
     </p>
 
+    <!-- A little about what I enjoy outside of school and work -->
     <p>
       Outside of school and work, I enjoy hiking, music, and
       hands-on projects. I like learning new skills and working
@@ -102,6 +110,7 @@
     </ul>
   </section>
 
+  <!-- Each project gets a short summary and a link to its own page -->
   <section id="projects">
     <h2>Selected Work</h2>
 
@@ -127,6 +136,7 @@
 
         </div>
 
+        <!-- This label shows the project's status and type -->
         <p class="project-type">Completed / Desktop App</p>
       </article>
 
@@ -177,6 +187,7 @@
         <p class="project-type">Completed / Database Web App</p>
       </article>
 
+      <!-- This project is still being developed with my capstone team -->
       <article class="project">
         <div class="project-info">
 
@@ -210,6 +221,7 @@
     </div>
   </section>
 
+  <!-- Education details, followed by links to the PDF resume -->
   <section id="resume">
     <h2>Resume</h2>
 
@@ -230,12 +242,14 @@
     <div class="links">
       <a href="files/matt-hill-resume.pdf">View Resume →</a>
 
+      <!-- The download attribute lets visitors save a copy -->
       <a href="files/matt-hill-resume.pdf" download>
         Download Resume →
       </a>
     </div>
   </section>
 
+  <!-- Visitors can email me or check out my professional profiles -->
   <section id="contact">
     <h2>Contact</h2>
 
@@ -248,6 +262,8 @@
 
       <p>
         <strong>Email:</strong>
+
+        <!-- mailto opens the visitor's configured email app -->
         <a href="mailto:cplmatt33@gmail.com">
           cplmatt33@gmail.com
         </a>
@@ -272,11 +288,13 @@
 
 </main>
 
+<!-- A quick way to get back to the top after reading the page -->
 <footer>
   <p>&copy; 2026 Matt Hill</p>
   <a href="#home">Back to top ↑</a>
 </footer>
 
+<!-- Loads the menu code after the page elements are available -->
 <script src="js/app.js"></script>
 
 </body>

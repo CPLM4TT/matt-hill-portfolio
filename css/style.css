@@ -1,7 +1,9 @@
+/* Includes padding and borders in the width of each element */
 * {
   box-sizing: border-box;
 }
 
+/* The basic colors, font, and spacing used across the site */
 body {
   margin: 0;
   background-color: #FFFFFF;
@@ -17,6 +19,7 @@ h3 {
   color: #101418;
 }
 
+/* Serif headings give the page that Wikipedia-like appearance */
 h1,
 h2 {
   font-family: Georgia, "Times New Roman", serif;
@@ -49,6 +52,7 @@ p {
   margin: 0 0 16px;
 }
 
+/* Blue links turn purple after a visitor has opened them */
 a {
   color: #3366CC;
   text-decoration: none;
@@ -66,12 +70,14 @@ a:active {
   color: #2A4B8D;
 }
 
+/* Makes it easier to see which link or button has keyboard focus */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid #3366CC;
   outline-offset: 3px;
 }
 
+/* A light background separates the navigation from the page content */
 header {
   background-color: #F8F9FA;
   border-bottom: 1px solid #A2A9B1;
@@ -83,6 +89,7 @@ nav {
   padding: 0 32px;
 }
 
+/* Keeps navigation links in a row and lets them wrap if needed */
 .nav-links {
   display: flex;
   justify-content: flex-start;
@@ -96,6 +103,7 @@ nav {
   font-weight: normal;
 }
 
+/* Hidden on desktop; the mobile rules below show this button */
 .menu-button {
   display: none;
   margin: 12px 0;
@@ -113,6 +121,7 @@ nav {
   background-color: #EAECF0;
 }
 
+/* Centers the content and keeps long lines from stretching too far */
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -123,6 +132,7 @@ section {
   padding: 20px 0;
 }
 
+/* Spacing and alignment for the homepage introduction */
 #home {
   padding: 12px 0 24px;
 }
@@ -131,6 +141,7 @@ section {
   text-align: left;
 }
 
+/* The subtitle is simpler than the regular section headings */
 .home h2 {
   margin: 0 0 16px;
   padding: 0;
@@ -146,6 +157,7 @@ section {
   margin: 0 0 16px;
 }
 
+/* Groups the project and resume links with room between them */
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +169,7 @@ section {
   justify-content: flex-start;
 }
 
+/* Keeps these actions looking like simple text links */
 .links a {
   padding: 0;
   border: none;
@@ -169,6 +182,7 @@ section {
   text-decoration: underline;
 }
 
+/* Gives lists enough indentation and spacing to stay readable */
 ul,
 ol {
   margin: 0 0 20px;
@@ -188,6 +202,7 @@ li {
   margin-top: 4px;
 }
 
+/* Project descriptions sit on the left, with status labels on the right */
 .project {
   display: flex;
   justify-content: space-between;
@@ -205,6 +220,7 @@ li {
   border-bottom: none;
 }
 
+/* Lets the description use the space left beside the status label */
 .project-info {
   flex: 1;
   min-width: 0;
@@ -226,6 +242,7 @@ li {
   text-align: right;
 }
 
+/* Small heading adjustments for the individual project pages */
 .project-page h1 {
   font-size: 36px;
 }
@@ -234,6 +251,7 @@ li {
   margin-top: 24px;
 }
 
+/* Images shrink with the page while keeping their original proportions */
 .project-screenshot {
   display: block;
   width: 100%;
@@ -245,6 +263,7 @@ li {
   background-color: #F8F9FA;
 }
 
+/* Phone-shaped previews don't need to be as wide as desktop images */
 .project-screenshot.portrait {
   max-width: 360px;
 }
@@ -253,10 +272,12 @@ li {
   margin-top: 18px;
 }
 
+/* Long email addresses or links can wrap instead of overflowing */
 .contact-links a {
   overflow-wrap: break-word;
 }
 
+/* Keeps the copyright and back-to-top link spaced apart */
 footer {
   display: flex;
   justify-content: space-between;
@@ -274,6 +295,7 @@ footer p {
   margin: 0;
 }
 
+/* Adjusts the layout when the screen is 780 pixels wide or smaller */
 @media screen and (max-width: 780px) {
   body {
     font-size: 15px;
@@ -288,6 +310,7 @@ footer p {
     padding: 14px 0;
   }
 
+  /* Only switches to a collapsible menu when JavaScript is available */
   .js-enabled .menu-button {
     display: block;
   }
@@ -300,10 +323,12 @@ footer p {
     padding: 0 0 16px;
   }
 
+  /* JavaScript adds this class when the visitor opens the menu */
   .js-enabled .nav-links.open {
     display: flex;
   }
 
+  /* Reduces spacing and heading sizes for smaller screens */
   main {
     padding: 20px;
   }
@@ -336,6 +361,7 @@ footer p {
     font-size: 30px;
   }
 
+  /* Stacks each project description and status instead of squeezing a row */
   .project {
     flex-direction: column;
     gap: 10px;
